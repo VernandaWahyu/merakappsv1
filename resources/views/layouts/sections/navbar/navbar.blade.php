@@ -17,9 +17,9 @@ $navbarDetached = ($navbarDetached ?? '');
       @if(isset($navbarFull))
       <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
         <a href="{{url('/')}}" class="app-brand-link gap-2">
-          <span class="app-brand-logo demo">
-            @include('_partials.macros',["width"=>25,"withbg"=>'#696cff'])
-          </span>
+        <span class="app-brand-logo demo">
+        <img src="{{ asset('assets/img/merak.png') }}" alt="Logo Merak" width="65">
+        </span>
           <span class="app-brand-text demo menu-text fw-bolder">{{config('variables.templateName')}}</span>
         </a>
       </div>
@@ -61,7 +61,7 @@ $navbarDetached = ($navbarDetached ?? '');
                       </div>
                     </div>
                     <div class="flex-grow-1">
-                      <span class="fw-semibold d-block">John Doe</span>
+                      <span class="fw-semibold d-block">Edy Kurniawan</span>
                       <small class="text-muted">Admin</small>
                     </div>
                   </div>
@@ -80,15 +80,6 @@ $navbarDetached = ($navbarDetached ?? '');
                 <a class="dropdown-item" href="javascript:void(0);">
                   <i class='bx bx-cog me-2'></i>
                   <span class="align-middle">Settings</span>
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="javascript:void(0);">
-                  <span class="d-flex align-items-center align-middle">
-                    <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                    <span class="flex-grow-1 align-middle">Billing</span>
-                    <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                  </span>
                 </a>
               </li>
               <li>
