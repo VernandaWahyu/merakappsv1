@@ -1,0 +1,40 @@
+{
+  "menu": [
+    {
+      "url": "/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "url": "/",
+      "name": "Data Jenis",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-jenis"
+    },
+    {
+      "url": "/",
+      "name": "Data Warna",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-warna"
+    },
+    {
+      "url": "/",
+      "name": "Data Status Fertilisasi",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-statusfertilisasi"
+    },
+    {
+      "url": "/",
+      "name": "Data Perkawinan",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-perkawinan"
+    },
+    {
+      "url": "/",
+      "name": "Data User",
+      "icon": "menu-icon tf-icons bx bx-user",
+      "slug": "data-user"
+    }
+  ]
+}
