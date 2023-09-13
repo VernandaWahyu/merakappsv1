@@ -18,7 +18,7 @@ class UserMiddleware
     public function handle(Request $request, Closure $next)
     {
         if(Auth::check()){
-            return redirect('/dashboard')->with('gagal','Anda Masih Login,Silahkan Logout Terlebih Dahulu');
+            return redirect('/dashboard')->with('errors','Anda Masih Login,Silahkan Logout Terlebih Dahulu');
         }
         return $next($request);
     }

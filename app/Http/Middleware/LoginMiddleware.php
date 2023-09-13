@@ -20,6 +20,6 @@ class LoginMiddleware
         if(Auth::check()){
             return $next($request);
         }
-        return redirect('auth')->with('gagal','Silahkan Login Terlebih Dahulu');
+        return redirect('auth')->with('errors','Silahkan Login Terlebih Dahulu');
     }
 }

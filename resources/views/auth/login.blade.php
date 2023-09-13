@@ -29,21 +29,7 @@
 
           <form method="POST" action="/auth/login">
           @csrf
-          <!-- <form id="formAuthentication" class="mb-3" action="{{url('/')}}" method="GET"> -->
-            @if(session()->has('success'))
-            <div class="alert alert-success alert-dismissable fade show" role="alert">
-              {{session('success')}}
-              <button type="button" data-bs-dismiss="alert" aria-label="close" class="btn-close" >
-            </button>
-            </div>
-            @endif
-            @if(session()->has('gagal'))
-            <div class="alert alert-danger alert-dismissable fade show" role="alert">
-              {{session('gagal')}}
-              <button type="button" data-bs-dismiss="alert" aria-label="close" class="btn-close" >
-            </button>
-            </div>
-            @endif
+          @include('sweetalert::alert')
             <div class="mb-3">
               <label for="email" class="form-label">Email or Username</label>
               <input type="email" class="form-control" id="email" value="{{ Session::get('email') }}"

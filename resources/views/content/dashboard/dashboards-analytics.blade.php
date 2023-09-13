@@ -15,20 +15,8 @@
 @endsection
 
 @section('content')
-@if(session()->has('success'))
-            <div class="alert alert-success alert-dismissable fade show" role="alert">
-              {{session('success')}}
-              <button type="button" data-bs-dismiss="alert" aria-label="close" class="btn-close" >
-            </button>
-            </div>
-            @endif
-            @if(session()->has('gagal'))
-            <div class="alert alert-danger alert-dismissable fade show" role="alert">
-              {{session('gagal')}}
-              <button type="button" data-bs-dismiss="alert" aria-label="close" class="btn-close" >
-            </button>
-            </div>
-            @endif
+
+@include('sweetalert::alert')
 <div class="row">
   <div class="col-lg-8 mb-4 order-0">
     <div class="card">

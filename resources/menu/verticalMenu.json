@@ -7,10 +7,10 @@
       "slug": "dashboard-analytics"
     },
     {
-      "url": "/",
+      "url": "/jenis",
       "name": "Data Jenis",
       "icon": "menu-icon tf-icons bx bx-layout",
-      "slug": "data-jenis"
+      "slug": "cards-basic"
     },
     {
       "url": "/",

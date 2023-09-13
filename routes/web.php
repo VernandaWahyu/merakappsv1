@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
 
 
 /*
@@ -81,8 +79,12 @@ Route::get('/form/layouts-horizontal', $controller_path . '\form_layouts\Horizon
 
 // tables
 Route::get('/tables/basic', $controller_path . '\tables\Basic@index')->name('tables-basic');
-Route::get('/auth',[LoginController::class,'auth'])->middleware('UserMiddleware');   
-Route::post('/auth/login',[LoginController::class,'login'])->middleware('UserMiddleware');   
-Route::get('/auth/logout',[LoginController::class,'logout']);   
-Route::get('/auth/register',[RegisterController::class,'register'])->middleware('UserMiddleware');   
-Route::post('/auth/create',[RegisterController::class,'create'])->middleware('UserMiddleware');   
+
+//auth
+Route::get('/auth', $controller_path .'\Auth\LoginController@auth')->middleware('UserMiddleware');   
+Route::post('/auth/login', $controller_path .'\Auth\LoginController@login')->middleware('UserMiddleware');   
+Route::get('/auth/logout', $controller_path .'\Auth\LoginController@logout');   
+Route::get('/auth/register', $controller_path .'\Auth\RegisterController@register')->middleware('UserMiddleware');   
+Route::post('/auth/create', $controller_path .'\Auth\RegisterController@create')->middleware('UserMiddleware');
+//jenis
+Route::get('/jenis', $controller_path .'\jenis\JenisController@index');

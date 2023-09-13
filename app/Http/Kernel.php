@@ -21,6 +21,9 @@ class Kernel extends HttpKernel
     \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
     \App\Http\Middleware\TrimStrings::class,
     \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    // \Illuminate\Session\Middleware\StartSession::class,
+    // \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+
   ];
 
   /**
@@ -38,6 +41,7 @@ class Kernel extends HttpKernel
       \App\Http\Middleware\VerifyCsrfToken::class,
       \Illuminate\Routing\Middleware\SubstituteBindings::class,
       \App\Http\Middleware\LocaleMiddleware::class,
+      \RealRashid\SweetAlert\ToSweetAlert::class,
     ],
 
     'api' => [
@@ -66,5 +70,6 @@ class Kernel extends HttpKernel
     'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
     'LoginMiddleware'=>\App\Http\Middleware\LoginMiddleware::class,
     'UserMiddleware'=>\App\Http\Middleware\UserMiddleware::class
+    
   ];
 }
