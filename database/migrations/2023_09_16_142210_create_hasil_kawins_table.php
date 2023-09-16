@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStatusFertilisasi extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateStatusFertilisasi extends Migration
      */
     public function up()
     {
-        Schema::create('status_fertilisasi', function (Blueprint $table) {
-            $table->smallInteger('id_status',6);
-            $table->string('status',50);
+        Schema::create('hasil_kawin', function (Blueprint $table) {
+            $table->smallIncrements('id');
+            $table->string('hasil', 50);
         });
     }
 
@@ -26,6 +26,6 @@ class CreateStatusFertilisasi extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('status_fertilisasi');
+        Schema::dropIfExists('hasil_kawin');
     }
-}
+};
