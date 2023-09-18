@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWarna extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class CreateWarna extends Migration
     public function up()
     {
         Schema::create('warna', function (Blueprint $table) {
-            $table->smallInteger('id_warna',6);
-            $table->string('warna',20);
+            $table->smallIncrements('id');
+            $table->string('warna', 30);
         });
     }
 
@@ -28,4 +28,4 @@ class CreateWarna extends Migration
     {
         Schema::dropIfExists('warna');
     }
-}
+};
