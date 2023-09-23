@@ -1,0 +1,40 @@
+{
+  "menu": [
+    {
+      "url": "/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard-analytics"
+    },
+    {
+      "url": "/perkawinan",
+      "name": "Data Perkawinan",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "cards-basic"
+    },
+    {
+      "url": "/warna",
+      "name": "Data Warna",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-warna"
+    },
+    {
+      "url": "/hasil",
+      "name": "Data Hasil Perkawinan",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-hasil-perkawinan"
+    },
+    {
+      "url": "/merak",
+      "name": "Data Merak",
+      "icon": "menu-icon tf-icons bx bx-layout",
+      "slug": "data-merak"
+    },
+    {
+      "url": "/riwayat",
+      "name": "Data Riwayat",
+      "icon": "menu-icon tf-icons bx bx-box",
+      "slug": "data-riwayat"
+    }
+  ]
+}
